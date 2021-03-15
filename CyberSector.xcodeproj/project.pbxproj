@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0BD179A825F826EB00AC23A2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		0BF8A32D25F818B1003B5B72 /* QuizGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF8A32D25F818B1003B5B72 /* CyberSector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyberSector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF8A33025F818B1003B5B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF8A33225F818B1003B5B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0BF8A33425F818B1003B5B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		0BF8A32E25F818B1003B5B72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BF8A32D25F818B1003B5B72 /* QuizGame.app */,
+				0BF8A32D25F818B1003B5B72 /* CyberSector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0BF8A32C25F818B1003B5B72 /* QuizGame */ = {
+		0BF8A32C25F818B1003B5B72 /* CyberSector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BF8A34125F818B7003B5B72 /* Build configuration list for PBXNativeTarget "QuizGame" */;
+			buildConfigurationList = 0BF8A34125F818B7003B5B72 /* Build configuration list for PBXNativeTarget "CyberSector" */;
 			buildPhases = (
 				0BF8A32925F818B1003B5B72 /* Sources */,
 				0BF8A32A25F818B1003B5B72 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = QuizGame;
+			name = CyberSector;
 			productName = QuizGame;
-			productReference = 0BF8A32D25F818B1003B5B72 /* QuizGame.app */;
+			productReference = 0BF8A32D25F818B1003B5B72 /* CyberSector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0BF8A32825F818B1003B5B72 /* Build configuration list for PBXProject "QuizGame" */;
+			buildConfigurationList = 0BF8A32825F818B1003B5B72 /* Build configuration list for PBXProject "CyberSector" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BF8A32C25F818B1003B5B72 /* QuizGame */,
+				0BF8A32C25F818B1003B5B72 /* CyberSector */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BF8A32825F818B1003B5B72 /* Build configuration list for PBXProject "QuizGame" */ = {
+		0BF8A32825F818B1003B5B72 /* Build configuration list for PBXProject "CyberSector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BF8A33F25F818B7003B5B72 /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BF8A34125F818B7003B5B72 /* Build configuration list for PBXNativeTarget "QuizGame" */ = {
+		0BF8A34125F818B7003B5B72 /* Build configuration list for PBXNativeTarget "CyberSector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BF8A34225F818B7003B5B72 /* Debug */,

@@ -39,11 +39,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     private func setupQuestions(){
-        gameModels.append(Question(text: "What is 2 + 2?", answers: [
-            Answer(text:"1", correct: false),
-            Answer(text:"2", correct: false),
-            Answer(text:"3", correct: false),
-            Answer(text:"4", correct: true),
+        gameModels.append(Question(text: "What does cybersecurity NOT protect from digital attacks", answers: [
+            Answer(text:"Networks", correct: false),
+            Answer(text:"Systems", correct: false),
+            Answer(text:"Programs", correct: false),
+            Answer(text:"Your mom", correct: true),
         ]))
         
         gameModels.append(Question(text: "What is 2 + 10?", answers: [
@@ -89,8 +89,8 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
                 else{
                     //end of game
-                    let alert = UIAlertController(title: "Done", message: "you beat the game", preferredStyle: .alert)
-                    alert.addAction( UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                    let alert = UIAlertController(title: "Done", message: "you beat the game!!", preferredStyle: .alert)
+                    alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     present(alert, animated: true)
                 }
             }
@@ -98,7 +98,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             //wrong
-            let alert = UIAlertController(title: "wrong", message: "you suck", preferredStyle: .alert)
+            let alert = UIAlertController(title: "wrong", message: "Not quite. Try again!", preferredStyle: .alert)
             alert.addAction( UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
             present(alert, animated: true)
         }

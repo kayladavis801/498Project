@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  QuizGame
 //
-//  Created by Kayla Davis on 3/9/21.
+//  Created by Kayla Davis.
 //
 
 

@@ -125,6 +125,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             //correct
             if let index = gameModels.firstIndex(where: {$0.text == question.text}){
                 if index < (gameModels.count - 1){
+                    
+                    let alert = UIAlertController(title: "Correct", message: "You've advanced to the next sector!", preferredStyle: .alert)
+                    alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                    present(alert, animated: true)
+                    
                     //next quesiton
                     let nextQuestion = gameModels[index+1]
                     currentQuestion = nil

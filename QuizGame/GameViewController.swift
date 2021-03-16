@@ -80,7 +80,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         gameModels.append(Question(text: "Sector 7: What does CSRF stand for?", answers: [
             Answer(text:"Cross-Site Request Forgery", correct: true),
             Answer(text:"Cyber Security Rotational Force", correct: false),
-            Answer(text:"Cryptography Santions in Research Facilities", correct: false),
+            Answer(text:"Cryptography Safe in Rep Facilities", correct: false),
             Answer(text:"Cheif of Security in Ratifying Firewalls", correct: false),
         ]))
         gameModels.append(Question(text: "Sector 8: When is accessing a computer without permission, destroying data and copy information without the owner’s permission, or anything of the sort leagal?", answers: [

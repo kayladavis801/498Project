@@ -24,11 +24,18 @@ class ViewController: UIViewController {
     
     
     //starting the question game
-    @IBAction func startGame(){
+//    @IBAction func startGame(){
+//        let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated:true)
+//    }
+    
+    @IBAction func startingGame(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated:true)
     }
+    
     // starting matching game
     @IBAction func dragDrop(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "DragViewController") as! DragViewController

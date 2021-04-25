@@ -411,7 +411,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         if checkAnswer(answer: answer, question: question){
             //correct
             if let index = gameModels.firstIndex(where: {$0.text == question.text}){
-                if index < (gameModels.count - 1){
+//                if index < (gameModels.count - 1){
                     
                     let alert = UIAlertController(title: "Correct", message: "You've advanced to the next sector!", preferredStyle: .alert)
                     alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
@@ -421,13 +421,13 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
                     let nextQuestion = gameModels[index+1]
                     currentQuestion = nil
                     configureUI(question: nextQuestion)
-                }
-                else{
-                    //end of game
-                    let alert = UIAlertController(title: "Done", message: "you beat the game!! Push the back button at the top to try again!", preferredStyle: .alert)
-                    alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                    present(alert, animated: true)
-                }
+//                }
+//                else{
+//                    //end of game
+//                    let alert = UIAlertController(title: "Done", message: "you beat the game!! Push the back button at the top to try again!", preferredStyle: .alert)
+//                    alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+//                    present(alert, animated: true)
+//                }
             }
             
         }

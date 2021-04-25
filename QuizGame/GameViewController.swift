@@ -96,11 +96,11 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             Answer(text:"Fishing", correct: false),
             Answer(text:"Running", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 10: How many HTTP response codes are there?", answers: [
-            Answer(text:"2", correct: false),
-            Answer(text:"7", correct: false),
-            Answer(text:"10", correct: false),
-            Answer(text:"5", correct: true),
+        gameModels.append(Question(text: "Sector 10: What attack is a way of finding out the right credentials by repetitively trying all the permutations and combinations of possible credentials?", answers: [
+            Answer(text:"Drive-by", correct: false),
+            Answer(text:"Man in the Middle", correct: false),
+            Answer(text:"SQL injection", correct: false),
+            Answer(text:"Brute Force", correct: true),
         ]))
         
     }
@@ -138,7 +138,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
                 else{
                     //end of game
-                    let alert = UIAlertController(title: "Done", message: "you beat the game!!", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Done", message: "you beat the game!! push the back button to try again to go back to the menu!", preferredStyle: .alert)
                     alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     present(alert, animated: true)
                 }
@@ -147,9 +147,17 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             //wrong
-            let alert = UIAlertController(title: "wrong", message: "Not quite. Try again!", preferredStyle: .alert)
-            alert.addAction( UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-            present(alert, animated: true)
+//            if gameModels[0]{
+//
+//            }
+//            else{
+                let alert = UIAlertController(title: "wrong", message: "Not quite. Try again!", preferredStyle: .alert)
+                alert.addAction( UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                present(alert, animated: true)
+                
+//            }
+           
+//        }
         }
     }
 }

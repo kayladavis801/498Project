@@ -11,50 +11,35 @@
         <!--Drag View Controller-->
         <scene sceneID="ZhG-qD-9Ok">
             <objects>
-                <viewController storyboardIdentifier="drag" id="VbJ-N0-IAe" customClass="DragViewController" customModule="CyberSector1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DragViewController" id="VbJ-N0-IAe" customClass="DragViewController" customModule="CyberSector1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAh-Cd-Ewp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcG-Gs-k8K">
-                                <rect key="frame" x="10" y="54" width="394" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="lgm-jX-cGF"/>
-                                </constraints>
-                                <string key="text">First things first, what is Cybersecurity?                                                    Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks.</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-kg-nop">
-                                <rect key="frame" x="50" y="348" width="314" height="200"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="5SR-iX-wY7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="OK">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzh-9N-Pjc">
+                                <rect key="frame" x="20" y="52" width="374" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="&lt;- Back (progress will not be saved)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="0.11313957719999999" green="0.11313957719999999" blue="0.11313957719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Gr2-8m-IkS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u6u-IU-5cr"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="tcG-Gs-k8K" firstAttribute="top" secondItem="u6u-IU-5cr" secondAttribute="top" constant="10" id="1cS-cq-yvN"/>
-                            <constraint firstItem="tcG-Gs-k8K" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="10" id="CNT-GO-hLe"/>
-                            <constraint firstItem="wpK-kg-nop" firstAttribute="centerX" secondItem="bAh-Cd-Ewp" secondAttribute="centerX" id="fXK-FH-071"/>
-                            <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="tcG-Gs-k8K" secondAttribute="trailing" constant="10" id="oTa-zK-AyH"/>
-                            <constraint firstItem="wpK-kg-nop" firstAttribute="centerY" secondItem="bAh-Cd-Ewp" secondAttribute="centerY" id="ugm-rW-TJ6"/>
-                            <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="wpK-kg-nop" secondAttribute="trailing" constant="50" id="x1o-3i-gX2"/>
-                            <constraint firstItem="wpK-kg-nop" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="50" id="xnO-K3-EeQ"/>
+                            <constraint firstItem="Mzh-9N-Pjc" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="146" id="Psm-UN-KDL"/>
+                            <constraint firstItem="Mzh-9N-Pjc" firstAttribute="top" secondItem="u6u-IU-5cr" secondAttribute="top" constant="44" id="fho-VE-g4m"/>
+                            <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="Mzh-9N-Pjc" secondAttribute="trailing" constant="83" id="l2j-zR-ygg"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVw-wl-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="31"/>
+            <point key="canvasLocation" x="3729" y="-21"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -64,19 +49,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g00-7S-sAG">
-                                <rect key="frame" x="107" y="396" width="200" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-3h-hyM">
+                                <rect key="frame" x="75" y="473" width="265" height="50"/>
                                 <color key="backgroundColor" red="0.11313957719999999" green="0.11313957719999999" blue="0.11313957719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="nmB-gG-nsk"/>
-                                    <constraint firstAttribute="height" constant="50" id="sCi-Wc-ajs"/>
+                                    <constraint firstAttribute="width" constant="200" id="d0g-Km-MwI"/>
+                                    <constraint firstAttribute="height" constant="50" id="f4F-Fl-NYm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                <state key="normal" title="Play 100 Sectors">
+                                <state key="normal" title="Play Drag and Drop">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMW-ZZ-2tO"/>
+                                    <action selector="dragDrop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDs-Yc-GEQ"/>
+                                    <segue destination="VbJ-N0-IAe" kind="showDetail" identifier="DragViewController" id="A49-gq-UdH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to CyberSector" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnw-zf-Ioq">
@@ -88,21 +74,39 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g00-7S-sAG">
+                                <rect key="frame" x="75" y="386" width="265" height="56"/>
+                                <color key="backgroundColor" red="0.11313957719999999" green="0.11313957719999999" blue="0.11313957719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="nmB-gG-nsk"/>
+                                    <constraint firstAttribute="height" constant="50" id="sCi-Wc-ajs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Play 50 Sectors">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMW-ZZ-2tO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.51143361282305744" green="0.039960260829171035" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="g00-7S-sAG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PSD-uD-Yhz"/>
+                            <constraint firstItem="g00-7S-sAG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1aS-IU-7nf"/>
+                            <constraint firstItem="g00-7S-sAG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bam-0j-nWB"/>
+                            <constraint firstItem="dvV-3h-hyM" firstAttribute="leading" secondItem="g00-7S-sAG" secondAttribute="leading" id="Oo9-QN-MOu"/>
                             <constraint firstItem="g00-7S-sAG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VQF-QX-4Nj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mnw-zf-Ioq" secondAttribute="trailing" constant="20" id="Y64-mr-id8"/>
                             <constraint firstItem="Mnw-zf-Ioq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YTw-79-7CT"/>
                             <constraint firstItem="Mnw-zf-Ioq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cwV-wM-vif"/>
+                            <constraint firstItem="dvV-3h-hyM" firstAttribute="top" secondItem="g00-7S-sAG" secondAttribute="bottom" constant="44" id="m1g-HE-Ogc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="73"/>
+            <point key="canvasLocation" x="621.73913043478262" y="72.991071428571431"/>
         </scene>
         <!--Game-->
         <scene sceneID="UeL-qg-5df">
@@ -121,7 +125,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nUG-6V-dGw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="4" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nUG-6V-dGw">
                                 <rect key="frame" x="0.0" y="304" width="414" height="558"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" red="0.78497792170000003" green="0.6392939245" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -141,9 +145,9 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-0M-2kM">
-                                <rect key="frame" x="297" y="54" width="54" height="30"/>
+                                <rect key="frame" x="90" y="54" width="248" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="&lt;- Back">
+                                <state key="normal" title="&lt;- Back (progress will not be saved)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -177,18 +181,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5w-nE-tMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1670" y="73"/>
+            <point key="canvasLocation" x="1654" y="73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="llA-eT-FcS">
+            <objects>
+                <viewController id="D8f-M0-KtG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrH-LM-yU7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaL-a6-wVj">
+                                <rect key="frame" x="20" y="95" width="1309" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78497792170000003" green="0.6392939245" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">How to play 50 Sectors: 50 cybersecurity "sectors" will be asked of you randomly. To quit, push the back button at the top. Your progress will not be saved. </string>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Hi-xd-opJ"/>
+                        <color key="backgroundColor" red="0.2601736181" green="0.00030619328840000002" blue="0.44865204019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8c-D6-gv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652.1739130434785" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hyg-1m-ldO"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

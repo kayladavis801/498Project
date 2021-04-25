@@ -23,19 +23,21 @@ class ViewController: UIViewController {
     
     
     
-    //starting the game
+    //starting the question game
     @IBAction func startGame(){
         let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated:true)
     }
-
+    // starting matching game
+    @IBAction func dragDrop(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "DragViewController") as! DragViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated:true)
+    }
     //back button
     @IBAction func backButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Back", message: "you beat the game!! push the back button to try again to go back to the menu!", preferredStyle: .alert)
-        alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-        present(alert, animated: true)
-    
+
         self.performSegue(withIdentifier: "backButton", sender: self)
     }
 }

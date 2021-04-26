@@ -30,6 +30,9 @@ class ViewController: UIViewController {
 //        present(vc, animated:true)
 //    }
     
+    @IBAction func startDragGame(_ sender: Any) {
+        self.performSegue(withIdentifier: "explainDrag", sender: self)
+    }
     @IBAction func startingGame(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
         vc.modalPresentationStyle = .fullScreen

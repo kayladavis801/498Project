@@ -19,7 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzh-9N-Pjc">
                                 <rect key="frame" x="20" y="52" width="374" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="&lt;- Back (progress will not be saved)">
+                                <state key="normal" title="&lt;- Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVw-wl-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3729" y="-21"/>
+            <point key="canvasLocation" x="2652" y="858"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -61,8 +61,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dragDrop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDs-Yc-GEQ"/>
-                                    <segue destination="VbJ-N0-IAe" kind="showDetail" identifier="DragViewController" id="A49-gq-UdH"/>
+                                    <action selector="startDragGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5i-i1-wUl"/>
+                                    <segue destination="Qs6-wF-WWU" kind="showDetail" identifier="explainDrag" destinationCreationSelector="explainDrag" id="ydf-cL-JUH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to CyberSector" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnw-zf-Ioq">
@@ -107,6 +107,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="621.73913043478262" y="72.991071428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ypw-bp-ANa">
+            <objects>
+                <viewController id="Qs6-wF-WWU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TH2-cz-kAE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgL-oJ-zGG">
+                                <rect key="frame" x="107" y="379" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.11313957719999999" green="0.11313957719999999" blue="0.11313957719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hs3-95-wM9"/>
+                                    <constraint firstAttribute="height" constant="50" id="nPq-r9-ViU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Play Drag and Drop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dragDrop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tY-NW-gw1"/>
+                                    <segue destination="VbJ-N0-IAe" kind="showDetail" id="qCt-zj-W2i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwm-D9-qEe">
+                                <rect key="frame" x="54" y="46" width="307" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="ybr-e4-8Fy"/>
+                                    <constraint firstAttribute="height" constant="320" id="yk4-c6-rh2"/>
+                                </constraints>
+                                <string key="text">How to play Drag and Drop:                                                    This part is still under construction. Once you are on the next screen, push the "back" button at the top.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QR1-O8-4FP"/>
+                        <color key="backgroundColor" red="0.2601736181" green="0.00030619328840000002" blue="0.44865204019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hwm-D9-qEe" firstAttribute="leading" secondItem="TH2-cz-kAE" secondAttribute="leading" id="2SM-SV-5DD"/>
+                            <constraint firstItem="QR1-O8-4FP" firstAttribute="trailing" secondItem="hwm-D9-qEe" secondAttribute="trailing" constant="10" id="Avz-eq-Ic3"/>
+                            <constraint firstItem="hwm-D9-qEe" firstAttribute="top" secondItem="QR1-O8-4FP" secondAttribute="top" constant="40" id="MgL-4w-6jD"/>
+                            <constraint firstItem="YgL-oJ-zGG" firstAttribute="centerY" secondItem="QR1-O8-4FP" secondAttribute="centerY" id="fyU-aD-oGQ"/>
+                            <constraint firstItem="YgL-oJ-zGG" firstAttribute="centerX" secondItem="QR1-O8-4FP" secondAttribute="centerX" id="hbD-Nf-hZN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmo-QT-sd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534.7826086956522" y="857.8125"/>
         </scene>
         <!--Game-->
         <scene sceneID="UeL-qg-5df">
@@ -181,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5w-nE-tMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="73"/>
+            <point key="canvasLocation" x="2735" y="64"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="llA-eT-FcS">
@@ -212,7 +263,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="CVM-Ey-ad0"/>
                                     <constraint firstAttribute="height" constant="320" id="z8Q-qW-PT2"/>
                                 </constraints>
-                                <string key="text">How to play 50 Sectors:                                                    50 multiple choice cybersecurity "sectors" will be asked of you randomly. To quit, push "the back" button at the top. Your progress will not be saved. </string>
+                                <string key="text">How to play 50 Sectors:                                                    50 multiple choice cybersecurity "sectors" will be asked to you randomly. To quit, push "the back" button at the top. Your progress will not be saved. </string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -233,11 +284,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8c-D6-gv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2652.1739130434785" y="99.776785714285708"/>
+            <point key="canvasLocation" x="1535" y="73"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hyg-1m-ldO"/>
+        <segue reference="Gr2-8m-IkS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

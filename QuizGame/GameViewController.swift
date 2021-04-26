@@ -285,104 +285,104 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             Answer(text:"Black hat hackers", correct: true),
             Answer(text:"Red hat hackers", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 36: .", answers: [
+        gameModels.append(Question(text: "Sector 36: Web Application Firewall is used to protect the application by ____ and monitoring incoming and outgoing traffic between web application and the internet.", answers: [
+            Answer(text:"Hacking", correct: false),
+            Answer(text:"Factoring", correct: false),
+            Answer(text:"Polluting", correct: false),
+            Answer(text:"Filtering", correct: true),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 37: ____ is a software testing method in which the internal structure or program code is HIDDEN.", answers: [
+            Answer(text:"Black Box Testing", correct: true),
+            Answer(text:"White Box Testing", correct: false),
+            Answer(text:"Red Box Testing", correct: false),
+            Answer(text:"Purple Box Testing", correct: false),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 38: ____ is a software testing method in which internal structure or program is KNOWN by tester.", answers: [
+            Answer(text:"Black Box Testing", correct: false),
+            Answer(text:"White Box Testing", correct: true),
+            Answer(text:"Red Box Testing", correct: false),
+            Answer(text:"Purple Box Testing", correct: false),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 39: Vulnerabilities refer to the ____ point in software code which can be exploited by a threat actor", answers: [
+            Answer(text:"common", correct: false),
+            Answer(text:"difficult", correct: false),
+            Answer(text:"strong", correct: false),
+            Answer(text:"weak", correct: true),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 40: Data ____ refers to the unauthorized transfer of data from a computer system.", answers: [
+            Answer(text:"security", correct: false),
+            Answer(text:"transmission", correct: false),
+            Answer(text:"escapement", correct: false),
+            Answer(text:"exfiltration", correct: true),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 41: What is the process of checking exploitable vulnerabilities on a target?", answers: [
+            Answer(text:"Broadcast Protocol", correct: false),
+            Answer(text:"Penetration Testing", correct: true),
+            Answer(text:"Security", correct: false),
+            Answer(text:"Cyber-attack", correct: false),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 42: What is a way to protect email messages, credit card information, and corporate data?", answers: [
+            Answer(text:"Hide in Plain Sight", correct: false),
+            Answer(text:"Don't tell anyone", correct: false),
+            Answer(text:"Write it down", correct: false),
+            Answer(text:"Use a Cipher Algorithm", correct: true),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 43: Is there a risk using pubic Wi-Fi?", answers: [
+            Answer(text:"No. Completly Safe.", correct: false),
+            Answer(text:"Yes. Many Security Issues.", correct: true),
+            Answer(text:"Depends on the location.", correct: false),
+            Answer(text:"Depends on the device.", correct: false),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 44: ____ is a technique in which the sender converts the message into a code.", answers: [
+            Answer(text:"Penetration Testing", correct: false),
+            Answer(text:"Data encryption", correct: true),
+            Answer(text:"Buisness continuity planning", correct: false),
+            Answer(text:"Application security", correct: false),
+        ]))
+        
+        gameModels.append(Question(text: "Sector 45: ____ or security specialist are specialized in penetration testing. They protect the information system of an organization.", answers: [
+            Answer(text:"White hat hackers", correct: true),
+            Answer(text:"Grey hat hackers", correct: false),
+            Answer(text:"Black hat hackers", correct: false),
+            Answer(text:"Red hat hackers", correct: false),
+        ]))
+        gameModels.append(Question(text: "Sector 46: ____ are hackers who can generate malware for personal financial gain or other malicious reasons. They break into a secure network to modify, steal, or destroy data so that the network can not be used by authorized network users.", answers: [
+            Answer(text:"White hat hackers", correct: false),
+            Answer(text:"Grey hat hackers", correct: false),
+            Answer(text:"Black hat hackers", correct: true),
+            Answer(text:"Red hat hackers", correct: false),
+        ]))
+        gameModels.append(Question(text: "Sector 47: .", answers: [
             Answer(text:"Secure Sockets Layer", correct: true),
             Answer(text:"Synronized Swimming Lifegaurds", correct: false),
             Answer(text:"Suspicious Security Law", correct: false),
             Answer(text:"Safe Security Level", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 37: .", answers: [
+        gameModels.append(Question(text: "Sector 48: .", answers: [
             Answer(text:"Trash", correct: false),
             Answer(text:"Viruses", correct: false),
             Answer(text:"Boo boos", correct: false),
             Answer(text:"Botnets", correct: true),
         ]))
-        gameModels.append(Question(text: "Sector 38: ", answers: [
+        gameModels.append(Question(text: "Sector 49: ", answers: [
             Answer(text:"Cross-Site Request Forgery", correct: true),
             Answer(text:"Cyber Security Rotational Force", correct: false),
             Answer(text:"Cryptography Safe in Rep Facilities", correct: false),
             Answer(text:"Cheif of Security in Ratifying Firewalls", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 39: ?", answers: [
-            Answer(text:"Before 9PM", correct: false),
-            Answer(text:"After 9PM ", correct: false),
-            Answer(text:"Never", correct: true),
-            Answer(text:"Anytime", correct: false),
-        ]))
-        gameModels.append(Question(text: "Sector 40: ", answers: [
-            Answer(text:"Fighting", correct: false),
-            Answer(text:"Hacking", correct: true),
-            Answer(text:"Fishing", correct: false),
-            Answer(text:"Running", correct: false),
-        ]))
-        gameModels.append(Question(text: "Sector 41: ", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 42: ", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 43: ?", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 44: ?", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 45: ?", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 46: ", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 47: ?", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 48: ?", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
-        gameModels.append(Question(text: "Sector 49: ", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
-        ]))
-        
         gameModels.append(Question(text: "Sector 50: ", answers: [
-            Answer(text:"Drive-by", correct: false),
-            Answer(text:"Man in the Middle", correct: false),
-            Answer(text:"SQL injection", correct: false),
-            Answer(text:"Brute Force", correct: true),
+            Answer(text:"Cross-Site Request Forgery", correct: true),
+            Answer(text:"Cyber Security Rotational Force", correct: false),
+            Answer(text:"Cryptography Safe in Rep Facilities", correct: false),
+            Answer(text:"Cheif of Security in Ratifying Firewalls", correct: false),
         ]))
         
        

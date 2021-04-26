@@ -20,19 +20,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    //starting the question game
-//    @IBAction func startGame(){
-//        let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated:true)
-//    }
-    
+    //explain matching game
     @IBAction func startDragGame(_ sender: Any) {
         self.performSegue(withIdentifier: "explainDrag", sender: self)
     }
+    //start quiz game
     @IBAction func startingGame(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "game") as! GameViewController
         vc.modalPresentationStyle = .fullScreen

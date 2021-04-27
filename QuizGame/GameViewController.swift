@@ -392,13 +392,14 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
         return currentQuestion?.answers.count ?? 0
         
     }
+    //Table view function cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             cell.textLabel?.text = currentQuestion?.answers[indexPath.row].text
         return cell
     }
     
-    
+    //selecting rows
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

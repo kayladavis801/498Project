@@ -334,55 +334,55 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             Answer(text:"Use a Cipher Algorithm", correct: true),
         ]))
         
-        gameModels.append(Question(text: "Sector 43: Is there a risk using pubic Wi-Fi?", answers: [
-            Answer(text:"No. Completly Safe.", correct: false),
-            Answer(text:"Yes. Many Security Issues.", correct: true),
-            Answer(text:"Depends on the location.", correct: false),
-            Answer(text:"Depends on the device.", correct: false),
+        gameModels.append(Question(text: "Sector 43: There is a hacker attack every ____ seconds.", answers: [
+            Answer(text:"97", correct: false),
+            Answer(text:"39", correct: true),
+            Answer(text:"4", correct: false),
+            Answer(text:"51", correct: false),
         ]))
         
-        gameModels.append(Question(text: "Sector 44: ____ is a technique in which the sender converts the message into a code.", answers: [
-            Answer(text:"Penetration Testing", correct: false),
-            Answer(text:"Data encryption", correct: true),
-            Answer(text:"Buisness continuity planning", correct: false),
-            Answer(text:"Application security", correct: false),
+        gameModels.append(Question(text: "Sector 44: Who is arguably the first computer hacker?", answers: [
+            Answer(text:"Kanye West", correct: false),
+            Answer(text:"Konrad Zuse", correct: true),
+            Answer(text:"Bob Ross", correct: false),
+            Answer(text:"Grace Hopper", correct: false),
         ]))
         
-        gameModels.append(Question(text: "Sector 45: ____ or security specialist are specialized in penetration testing. They protect the information system of an organization.", answers: [
-            Answer(text:"White hat hackers", correct: true),
-            Answer(text:"Grey hat hackers", correct: false),
-            Answer(text:"Black hat hackers", correct: false),
-            Answer(text:"Red hat hackers", correct: false),
+        gameModels.append(Question(text: "Sector 45: When was the first computer virus written?", answers: [
+            Answer(text:"1986", correct: true),
+            Answer(text:"1999", correct: false),
+            Answer(text:"1965", correct: false),
+            Answer(text:"1977", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 46: ____ are hackers who can generate malware for personal financial gain or other malicious reasons. They break into a secure network to modify, steal, or destroy data so that the network can not be used by authorized network users.", answers: [
-            Answer(text:"White hat hackers", correct: false),
-            Answer(text:"Grey hat hackers", correct: false),
-            Answer(text:"Black hat hackers", correct: true),
-            Answer(text:"Red hat hackers", correct: false),
+        gameModels.append(Question(text: "Sector 46: How old were Basit and Amjad Farooq Alvi, the brothers who made the first computer virus, at the time?", answers: [
+            Answer(text:"31 and 37", correct: false),
+            Answer(text:"28 and 33", correct: false),
+            Answer(text:"17 and 24", correct: true),
+            Answer(text:"21 and 26", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 47: .", answers: [
-            Answer(text:"Secure Sockets Layer", correct: true),
-            Answer(text:"Synronized Swimming Lifegaurds", correct: false),
-            Answer(text:"Suspicious Security Law", correct: false),
-            Answer(text:"Safe Security Level", correct: false),
+        gameModels.append(Question(text: "Sector 47: what is the name of the first anitvirus software ever written?", answers: [
+            Answer(text:"Reaper", correct: true),
+            Answer(text:"Killer", correct: false),
+            Answer(text:"Cipher", correct: false),
+            Answer(text:"Lüning", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 48: .", answers: [
-            Answer(text:"Trash", correct: false),
-            Answer(text:"Viruses", correct: false),
-            Answer(text:"Boo boos", correct: false),
-            Answer(text:"Botnets", correct: true),
+        gameModels.append(Question(text: "Sector 48: Andreas Lüning and ____ invented the first antivirus.", answers: [
+            Answer(text:"Grace Hopper", correct: false),
+            Answer(text:"Alan Turning", correct: false),
+            Answer(text:"Beyonce", correct: false),
+            Answer(text:"Kai Figge", correct: true),
         ]))
-        gameModels.append(Question(text: "Sector 49: ", answers: [
-            Answer(text:"Cross-Site Request Forgery", correct: true),
-            Answer(text:"Cyber Security Rotational Force", correct: false),
-            Answer(text:"Cryptography Safe in Rep Facilities", correct: false),
-            Answer(text:"Cheif of Security in Ratifying Firewalls", correct: false),
+        gameModels.append(Question(text: "Sector 49: When was the first antivirus made", answers: [
+            Answer(text:"1987", correct: true),
+            Answer(text:"1992", correct: false),
+            Answer(text:"1976", correct: false),
+            Answer(text:"2001", correct: false),
         ]))
-        gameModels.append(Question(text: "Sector 50: ", answers: [
-            Answer(text:"Cross-Site Request Forgery", correct: true),
-            Answer(text:"Cyber Security Rotational Force", correct: false),
-            Answer(text:"Cryptography Safe in Rep Facilities", correct: false),
-            Answer(text:"Cheif of Security in Ratifying Firewalls", correct: false),
+        gameModels.append(Question(text: "Sector 50: What was the first computer virus called?", answers: [
+            Answer(text:"Creaper", correct: true),
+            Answer(text:"Snake", correct: false),
+            Answer(text:"Virus 1", correct: false),
+            Answer(text:"Terminator", correct: false),
         ]))
         
        

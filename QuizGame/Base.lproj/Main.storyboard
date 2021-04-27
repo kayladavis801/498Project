@@ -160,7 +160,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="ybr-e4-8Fy"/>
                                     <constraint firstAttribute="height" constant="320" id="yk4-c6-rh2"/>
                                 </constraints>
-                                <string key="text">How to play Drag and Drop:                                                    This part is still under construction. Once you are on the next screen, push the "back" button at the top.                      </string>
+                                <string key="text">How to play Drag and Drop:                                                    Drag the matching sectors together to turn them green. Swipe down OR push the "back" button at the top to play another game.                </string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -310,7 +310,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kWk-Ah-jtU"/>
+        <segue reference="hyg-1m-ldO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

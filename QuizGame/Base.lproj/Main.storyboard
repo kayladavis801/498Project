@@ -27,18 +27,41 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="kWk-Ah-jtU"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-tb-CPk">
+                                <rect key="frame" x="157" y="371" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.78497792170000003" green="0.6392939245" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DOO-52-5nj"/>
+                                    <constraint firstAttribute="height" constant="100" id="DwC-yf-MpA"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nK0-aF-3Rm" appends="YES" id="sbA-FT-SVN"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u6u-IU-5cr"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="fj5-tb-CPk" firstAttribute="centerY" secondItem="bAh-Cd-Ewp" secondAttribute="centerY" id="GVx-Nh-AMy"/>
                             <constraint firstItem="Mzh-9N-Pjc" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="40" id="Psm-UN-KDL"/>
+                            <constraint firstItem="fj5-tb-CPk" firstAttribute="centerX" secondItem="bAh-Cd-Ewp" secondAttribute="centerX" id="Y27-iD-2Ze"/>
                             <constraint firstItem="Mzh-9N-Pjc" firstAttribute="top" secondItem="u6u-IU-5cr" secondAttribute="top" constant="44" id="fho-VE-g4m"/>
                             <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="Mzh-9N-Pjc" secondAttribute="trailing" constant="40" id="l2j-zR-ygg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dragView1" destination="fj5-tb-CPk" id="kzR-p1-Drz"/>
+                        <outlet property="gesture1" destination="nK0-aF-3Rm" id="2ee-B4-G3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVw-wl-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nK0-aF-3Rm" userLabel="sec1">
+                    <connections>
+                        <action selector="ViewDragged1:" destination="VbJ-N0-IAe" id="FdC-xQ-gSi"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2650.7246376811595" y="857.8125"/>
         </scene>

@@ -16,6 +16,8 @@ class DragViewController: UIViewController {
 //
 //    @IBOutlet var gestureRecognition: UIPanGestureRecognizer!
 //
+    @IBOutlet var gesture1: UIPanGestureRecognizer!
+    @IBOutlet weak var dragView1: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +27,14 @@ class DragViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-//    @IBAction func viewDrag1(_ sender: UIPanGestureRecognizer) {
+    @IBAction func ViewDragged1(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: dragView1)
+        
+                sender.view!.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)
+        
+                sender.setTranslation(CGPoint.zero, in: self.view)
+    }
+    //    @IBAction func viewDrag1(_ sender: UIPanGestureRecognizer) {
 //        let translation = sender.translation(in: dragging)
 //
 //        sender.view!.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)

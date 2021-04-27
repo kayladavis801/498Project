@@ -24,37 +24,23 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Gr2-8m-IkS"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="kWk-Ah-jtU"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-yF-5PX">
-                                <rect key="frame" x="87" y="301" width="240" height="240"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="cI8-Yg-z9Z"/>
-                                    <constraint firstAttribute="height" constant="240" id="jyg-gi-QUs"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u6u-IU-5cr"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="qkx-yF-5PX" firstAttribute="centerX" secondItem="bAh-Cd-Ewp" secondAttribute="centerX" id="Knk-0g-JT2"/>
-                            <constraint firstItem="Mzh-9N-Pjc" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="146" id="Psm-UN-KDL"/>
+                            <constraint firstItem="Mzh-9N-Pjc" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="40" id="Psm-UN-KDL"/>
                             <constraint firstItem="Mzh-9N-Pjc" firstAttribute="top" secondItem="u6u-IU-5cr" secondAttribute="top" constant="44" id="fho-VE-g4m"/>
-                            <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="Mzh-9N-Pjc" secondAttribute="trailing" constant="83" id="l2j-zR-ygg"/>
-                            <constraint firstItem="qkx-yF-5PX" firstAttribute="centerY" secondItem="bAh-Cd-Ewp" secondAttribute="centerY" id="yQe-yi-eNw"/>
+                            <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="Mzh-9N-Pjc" secondAttribute="trailing" constant="40" id="l2j-zR-ygg"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Jnn-II-CG3" appends="YES" id="EYD-XK-Q8t"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVw-wl-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Jnn-II-CG3"/>
             </objects>
-            <point key="canvasLocation" x="2652" y="858"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="857.8125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -76,7 +62,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startDragGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5i-i1-wUl"/>
                                     <segue destination="Qs6-wF-WWU" kind="showDetail" identifier="explainDrag" destinationCreationSelector="explainDrag" id="ydf-cL-JUH"/>
                                 </connections>
                             </button>
@@ -143,8 +128,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dragDrop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tY-NW-gw1"/>
-                                    <segue destination="VbJ-N0-IAe" kind="showDetail" id="qCt-zj-W2i"/>
+                                    <segue destination="VbJ-N0-IAe" kind="showDetail" identifier="" id="qCt-zj-W2i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwm-D9-qEe">
@@ -177,7 +161,7 @@
         <!--Game-->
         <scene sceneID="UeL-qg-5df">
             <objects>
-                <viewController storyboardIdentifier="game" title="Game" id="3CE-0f-zBk" customClass="GameViewController" customModule="CyberSector1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" title="Game" id="3CE-0f-zBk" customClass="GameViewController" customModule="CyberSector1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4FR-od-ZH6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,9 +195,9 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-0M-2kM">
-                                <rect key="frame" x="90" y="54" width="248" height="30"/>
+                                <rect key="frame" x="187" y="54" width="54" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <state key="normal" title="&lt;- Back (progress will not be saved)">
+                                <state key="normal" title="&lt;- Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -278,7 +262,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="CVM-Ey-ad0"/>
                                     <constraint firstAttribute="height" constant="320" id="z8Q-qW-PT2"/>
                                 </constraints>
-                                <string key="text">How to play 50 Sectors:                                                    50 multiple choice cybersecurity "sectors" will be asked to you randomly. To quit, push "the back" button at the top. Your progress will not be saved. </string>
+                                <string key="text">How to play 50 Sectors:                                                    50 multiple choice cybersecurity "sectors" will be asked to you randomly. Swipe down OR push the "back" button at the top to play another game.  </string>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -287,7 +271,7 @@
                         <viewLayoutGuide key="safeArea" id="8Hi-xd-opJ"/>
                         <color key="backgroundColor" red="0.2601736181" green="0.00030619328840000002" blue="0.44865204019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Z3e-dX-fDx" firstAttribute="top" secondItem="yrH-LM-yU7" secondAttribute="top" priority="250" constant="120" id="0LE-kN-uSC"/>
+                            <constraint firstItem="Z3e-dX-fDx" firstAttribute="top" secondItem="yrH-LM-yU7" secondAttribute="top" priority="250" constant="40" id="0LE-kN-uSC"/>
                             <constraint firstItem="Z3e-dX-fDx" firstAttribute="centerX" secondItem="bn2-em-brP" secondAttribute="centerX" priority="900" id="0YH-dU-Hjm"/>
                             <constraint firstItem="bn2-em-brP" firstAttribute="centerX" secondItem="yrH-LM-yU7" secondAttribute="centerX" id="6JF-8Z-tOD"/>
                             <constraint firstItem="8Hi-xd-opJ" firstAttribute="bottom" secondItem="bn2-em-brP" secondAttribute="bottom" constant="202" id="84H-co-V37"/>
@@ -303,7 +287,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gr2-8m-IkS"/>
+        <segue reference="kWk-Ah-jtU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

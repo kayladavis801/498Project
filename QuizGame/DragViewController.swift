@@ -9,26 +9,59 @@ import UIKit
 
 
 
+
 class DragViewController: UIViewController {
-    
-//    private let myView: UIView = {
-//        let rect = CGRect(x: 0, y: 0, width: 200, height: 200)
-//        let view = UIView(frame: rect)
-//        view.backgroundColor = .link
-//        return view
+   
+//    @IBOutlet weak var dragging: UIView!
+//
+//    @IBOutlet var gestureRecognition: UIPanGestureRecognizer!
+//
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+//    @IBAction func viewDrag1(_ sender: UIPanGestureRecognizer) {
+//        let translation = sender.translation(in: dragging)
+//
+//        sender.view!.center = CGPoint(x: sender.view!.center.x + translation.x, y: sender.view!.center.y + translation.y)
+//
+//        sender.setTranslation(CGPoint.zero, in: self.view)
 //    }
 //
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-//    
-//    override func viewDidLayoutSubView(){
-//        super.viewDidLayoutSubviews()
-//        myView.center = view.center
-//    }
     
+//    func checkCollision (){
+//        if <#condition#> {
+//            <#code#>
+//        }
+//    }
+//    @State var xPos1:CGFloat = 200
+//    @State var yPos1:CGFloat = 300
+//
+//    @State var xPos2:CGFloat = 200
+//    @State var yPos2:CGFloat = 600
+//
+//
+//    func ZStack(){
+//
+//        Rectangle()
+//            .fill(Color.black)
+//            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+//            .position(x: self.xPos1, y: self.yPos1)
+//
+//        Rectangle()
+//            .fill(Color.blue)
+//            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+//            .position(x: self.xPos2, y: self.yPos2)
+//            .gesture(DragGesture().onChanged(self.xPos2 = value.location.x)
+//    }
+
+
 
 
 

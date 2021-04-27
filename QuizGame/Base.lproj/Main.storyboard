@@ -27,17 +27,32 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="Gr2-8m-IkS"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-yF-5PX">
+                                <rect key="frame" x="87" y="301" width="240" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cI8-Yg-z9Z"/>
+                                    <constraint firstAttribute="height" constant="240" id="jyg-gi-QUs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u6u-IU-5cr"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="qkx-yF-5PX" firstAttribute="centerX" secondItem="bAh-Cd-Ewp" secondAttribute="centerX" id="Knk-0g-JT2"/>
                             <constraint firstItem="Mzh-9N-Pjc" firstAttribute="leading" secondItem="u6u-IU-5cr" secondAttribute="leading" constant="146" id="Psm-UN-KDL"/>
                             <constraint firstItem="Mzh-9N-Pjc" firstAttribute="top" secondItem="u6u-IU-5cr" secondAttribute="top" constant="44" id="fho-VE-g4m"/>
                             <constraint firstItem="u6u-IU-5cr" firstAttribute="trailing" secondItem="Mzh-9N-Pjc" secondAttribute="trailing" constant="83" id="l2j-zR-ygg"/>
+                            <constraint firstItem="qkx-yF-5PX" firstAttribute="centerY" secondItem="bAh-Cd-Ewp" secondAttribute="centerY" id="yQe-yi-eNw"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jnn-II-CG3" appends="YES" id="EYD-XK-Q8t"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVw-wl-wef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Jnn-II-CG3"/>
             </objects>
             <point key="canvasLocation" x="2652" y="858"/>
         </scene>
@@ -116,17 +131,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwm-D9-qEe">
-                                <rect key="frame" x="54" y="46" width="307" height="260"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="ybr-e4-8Fy"/>
-                                    <constraint firstAttribute="height" constant="320" id="yk4-c6-rh2"/>
-                                </constraints>
-                                <string key="text">How to play Drag and Drop:                                                    This part is still under construction. Once you are on the next screen, push the "back" button at the top.                      </string>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgL-oJ-zGG">
                                 <rect key="frame" x="107" y="396" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.11313957719999999" green="0.11313957719999999" blue="0.11313957719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -143,13 +147,24 @@
                                     <segue destination="VbJ-N0-IAe" kind="showDetail" id="qCt-zj-W2i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwm-D9-qEe">
+                                <rect key="frame" x="27" y="39" width="360" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="318" id="ybr-e4-8Fy"/>
+                                    <constraint firstAttribute="height" constant="320" id="yk4-c6-rh2"/>
+                                </constraints>
+                                <string key="text">How to play Drag and Drop:                                                    This part is still under construction. Once you are on the next screen, push the "back" button at the top.                      </string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QR1-O8-4FP"/>
                         <color key="backgroundColor" red="0.2601736181" green="0.00030619328840000002" blue="0.44865204019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hwm-D9-qEe" firstAttribute="leading" secondItem="TH2-cz-kAE" secondAttribute="leading" id="2SM-SV-5DD"/>
                             <constraint firstItem="QR1-O8-4FP" firstAttribute="trailing" secondItem="hwm-D9-qEe" secondAttribute="trailing" constant="10" id="Avz-eq-Ic3"/>
-                            <constraint firstItem="hwm-D9-qEe" firstAttribute="top" secondItem="QR1-O8-4FP" secondAttribute="top" constant="40" id="MgL-4w-6jD"/>
+                            <constraint firstItem="hwm-D9-qEe" firstAttribute="top" secondItem="QR1-O8-4FP" secondAttribute="top" constant="20" id="MgL-4w-6jD"/>
                             <constraint firstItem="YgL-oJ-zGG" firstAttribute="centerY" secondItem="QR1-O8-4FP" secondAttribute="centerY" id="fyU-aD-oGQ"/>
                             <constraint firstItem="YgL-oJ-zGG" firstAttribute="centerX" secondItem="QR1-O8-4FP" secondAttribute="centerX" id="hbD-Nf-hZN"/>
                         </constraints>

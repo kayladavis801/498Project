@@ -7,14 +7,11 @@
 
 
 import UIKit
-import SpriteKit
-import GameplayKit
 
 
 class ViewController: UIViewController {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
